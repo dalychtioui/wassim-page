@@ -1,0 +1,541 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.container {
+  position: absolute;
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container nav {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1em 1.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  z-index: 999;
+  -webkit-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.container nav span {
+  max-width: 290px;
+  min-width: 220px;
+}
+
+.container nav span img {
+  width: 100%;
+}
+
+.container nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container nav ul li {
+  margin: 0 1em;
+}
+
+.container nav ul li a {
+  text-decoration: none;
+  color: #ababab;
+  font-family: "Quicksand", sans-serif;
+}
+
+.container nav ul li a:hover {
+  color: #00c3a5;
+}
+
+.container nav ul li .active-li {
+  color: #00c3a5;
+}
+
+.container .hero {
+  position: relative;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 0em;
+  text-align: center;
+  color: #00c3a5;
+  background-color: #1b2734;
+  margin-bottom: 2em;
+}
+
+.container .hero h1 {
+  margin-top: 1.2em;
+  max-width: 619px;
+  padding: 0 0.3em;
+}
+
+.container .hero div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 1em;
+  margin-top: 2em;
+  margin: 0 auto;
+}
+
+.container .hero div p {
+  max-width: 300px;
+  text-align: justify;
+  color: #dbdbdb;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.7em;
+  margin: 1em 1em;
+}
+
+.container .card-holder {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card-holder .card {
+  position: relative;
+  display: block;
+  min-width: 210px;
+  max-width: 300px;
+  min-height: 350px;
+  background-color: #00c3a5;
+  margin: 0.5em;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 2em 2em 2em;
+  color: white;
+}
+
+.container .card-holder .card div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .card-holder .card div img {
+  width: 50px;
+}
+
+.container .card-holder .card div h2 {
+  margin: 0.2em 0 1em 0;
+}
+
+.container .card-holder .card div p {
+  width: 90%;
+  text-align: left;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.5em;
+  font-size: 1.2em;
+}
+
+.container .card-holder .card select {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bolder;
+}
+
+.container .card-holder .card:nth-child(2) {
+  background-color: #3d83df;
+}
+
+.container .card-holder .card:nth-child(3) {
+  background-color: #1b2734;
+}
+
+.container .about-app {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  height: auto;
+  margin-top: 4em;
+  background-image: linear-gradient(-45deg, rgba(0, 204, 177, 0.01) 5%, rgba(61, 199, 223, 0.1));
+  background-color: #e5faf8;
+  overflow: hidden;
+}
+
+.container .about-app .cards-about-app-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 700px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+}
+
+.container .about-app .cards-about-app-holder .card-about-app {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  width: 270px;
+  height: 270px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  margin: 1em;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.container .about-app .cards-about-app-holder .card-about-app div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container .about-app .cards-about-app-holder .card-about-app div h2 {
+  color: #00c3a5;
+}
+
+.container .about-app .cards-about-app-holder .card-about-app div p {
+  color: #747474;
+}
+
+.container .about-app #back-about-img {
+  position: absolute;
+  right: 67%;
+  top: 45%;
+  width: 456px;
+  height: 435px;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.container .about-app .text-about-app-holder {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 3em 0 0 0;
+}
+
+.container .about-app .text-about-app-holder h1 {
+  color: #00c3a5;
+  text-align: center;
+}
+
+.container .about-app .text-about-app-holder p {
+  text-align: center;
+  color: #747474;
+  line-height: 1.5em;
+}
+
+.container section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 4em 2em;
+}
+
+.container section .text-section-holder {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2em;
+}
+
+.container section .text-section-holder h2 {
+  max-width: 400px;
+  color: #00c3a5;
+}
+
+.container section .text-section-holder p {
+  max-width: 600px;
+  color: #747474;
+}
+
+.container section .places-cards-holder {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0.5em;
+}
+
+.container section .places-cards-holder #taker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 950px;
+}
+
+.container section .places-cards-holder #taker .place-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-image: url("https://www.docplanner.com/images/warsaw.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  min-width: 290px;
+  height: 290px;
+  border-radius: 10px;
+  margin: 1em 0;
+  overflow: hidden;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.container section .places-cards-holder #taker .place-card:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container section .places-cards-holder #taker .place-card span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: white;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0.5em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container section .places-cards-holder #taker .place-card span h2 {
+  font-size: 1.2em;
+  padding: 0 0 0 0.5em;
+  color: #747474;
+}
+
+.container section .places-cards-holder #taker .place-card span span {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  max-width: 42%;
+  background-color: #1e76db;
+  text-align: center;
+  border-radius: 20px;
+  padding: 0.4em 0;
+  color: white;
+  cursor: pointer;
+}
+
+.container section .places-cards-holder #taker .place-card:nth-child(2) {
+  background-image: url("https://www.docplanner.com/images/barcelona.png");
+}
+
+.container section .places-cards-holder #taker .place-card:nth-child(3) {
+  background-image: url("https://www.docplanner.com/images/istanbul.png");
+}
+
+.container section .places-cards-holder #taker .place-card:nth-child(4) {
+  background-image: url("https://www.docplanner.com/images/rome.png");
+}
+
+.container section .places-cards-holder #taker .place-card:nth-child(5) {
+  background-image: url("https://www.docplanner.com/images/bologna.png");
+}
+
+.container section .places-cards-holder #taker .place-card:nth-child(6) {
+  background-image: url("https://www.docplanner.com/images/mexico-city.png");
+}
+
+.container .call-to-action-holder {
+  position: relative;
+  width: 70%;
+  margin: 0 auto 4em auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+.container .call-to-action-holder h1 {
+  color: #747474;
+  margin: 0 0 1em;
+}
+
+.container .call-to-action-holder span {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1em;
+  max-width: 100%;
+  font-weight: bolder;
+  background-color: #1e76db;
+  text-align: center;
+  border-radius: 20px;
+  padding: 0.4em 0;
+  color: white;
+  cursor: pointer;
+  padding: 0.7em 1em;
+}
+
+.container footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  padding: 0 1em;
+  border-top: 1px solid #747474;
+  color: #747474;
+}
+
+.container footer p {
+  font-size: 0.92em;
+  max-width: 600px;
+  margin: 1em auto;
+}
+
+.container footer h2 {
+  font-size: 0.85em;
+  margin-top: 0em;
+}
+
+@media (max-width: 708px) {
+  .container nav ul {
+    display: none;
+  }
+  .container .hero h1 {
+    max-width: 550px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
